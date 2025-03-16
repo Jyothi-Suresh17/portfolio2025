@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 export default function Portfolio() {
 
   const skills = ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "MongoDB", "Node.js", "Express.js"];
-  
+
   return (
     <div className="min-h-screen bg-black text-gray-200">
       {/* Hero Section */}
@@ -83,13 +83,13 @@ export default function Portfolio() {
           Contact Me
         </h2>
         <div className="flex justify-center gap-6 mt-4">
-          <a href="#" className="text-gray-400 text-2xl hover:text-blue-400 transition duration-300 hover:scale-110">
+          <a href="https://github.com/Jyothi-Suresh17" className="text-gray-400 text-2xl hover:text-blue-400 transition duration-300 hover:scale-110">
             <FaGithub />
           </a>
-          <a href="#" className="text-gray-400 text-2xl hover:text-blue-400 transition duration-300 hover:scale-110">
+          <a href="www.linkedin.com/in/jy0thi-suresh" className="text-gray-400 text-2xl hover:text-blue-400 transition duration-300 hover:scale-110">
             <FaLinkedin />
           </a>
-          <a href="#" className="text-gray-400 text-2xl hover:text-blue-400 transition duration-300 hover:scale-110">
+          <a href="mailto:jyothisuresh2521@gmail.com?subject=Hello&body=I want to contact you" className="text-gray-400 text-2xl hover:text-blue-400 transition duration-300 hover:scale-110">
             <FaEnvelope />
           </a>
         </div>
