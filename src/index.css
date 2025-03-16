@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.text-neon {
+  color: #0ff; /* Neon cyan */
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff;
+}
+
+.bg-neon {
+  background-color: #0ff;
+  box-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+.shadow-neon {
+  box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff;
+}
