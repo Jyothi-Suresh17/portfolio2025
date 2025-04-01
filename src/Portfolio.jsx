@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Profile from "./assets/Profile.jpg";
-import { projects } from "./projects";
+import ProjectCard from "./ProjectCard";
 
 export default function Portfolio() {
   const skills = [
@@ -13,7 +13,6 @@ export default function Portfolio() {
     <div className="min-h-screen bg-black text-gray-200">
       {/* Hero Section */}
       <section className="h-screen flex flex-col items-center justify-center text-center p-4">
-        {/* Text Content */}
         <h1 className="text-5xl font-bold text-blue-400 transition duration-300 hover:scale-105 hover:text-blue-300">
           Jyothi Suresh
         </h1>
@@ -29,13 +28,12 @@ export default function Portfolio() {
           Download CV
         </a>
 
-        {/* Profile Image (Moves below text on small screens) */}
+        {/* Profile Image */}
         <img 
-  src={Profile}
-  alt="Jyothi Suresh"
-  className="w-48 h-72 sm:w-48 sm:h-56 md:w-64 md:h-72 lg:w-72 lg:h-80 border-4 border-blue-400 shadow-lg mt-10 sm:mb-4 transition duration-300 hover:scale-105 order-last sm:order-none"
-/>
-
+          src={Profile}
+          alt="Jyothi Suresh"
+          className="w-[200px] h-[350px] sm:w-[190px] sm:h-[280px] md:w-[256px] md:h-[380px] lg:w-[288px] lg:h-[420px] border-4 border-blue-400 shadow-lg mt-10 sm:mb-4 transition duration-300 hover:scale-105 order-last sm:order-none"
+        />
       </section>
 
       {/* Classic Design Element */}
@@ -72,46 +70,15 @@ export default function Portfolio() {
 
       {/* Projects Section */}
       <section className="py-16 px-4 bg-gray-900">
-        <h2 className="text-3xl font-semibold text-center text-blue-400 transition duration-300 hover:scale-105 hover:text-blue-300">
-          Projects
-        </h2>
-        <div className="flex overflow-x-auto gap-6 mt-6 max-w-full py-6">
-          {/* Project Card */}
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="bg-gray-800 p-5 rounded-lg shadow-lg border border-blue-500 transition duration-300 transform hover:scale-105 hover:shadow-xl"
-            >
-              {/* Project Image (Thumbnail) */}
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-40 object-cover rounded-md mb-4"
-              />
+  <h2 className="text-3xl font-semibold text-center text-blue-400 transition duration-300 hover:scale-105 hover:text-blue-300">
+    Projects
+  </h2>
+  <div className="flex flex-wrap justify-center gap-6 mt-6">
+    {/* This is where ProjectCard will be inserted */}
+    <ProjectCard />
+  </div>
+</section>
 
-              {/* Project Title */}
-              <h3 className="text-xl font-semibold text-white transition duration-300 hover:text-blue-400">
-                {project.title}
-              </h3>
-
-              {/* Project Description */}
-              <p className="text-gray-400 mt-2 transition duration-300 hover:text-gray-200">
-                {project.description}
-              </p>
-
-              {/* GitHub Link */}
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 text-blue-400 hover:text-blue-300 hover:underline transition duration-300"
-              >
-                View Project
-              </a>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section className="py-16 px-4 text-center">
