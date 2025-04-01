@@ -31,14 +31,15 @@ export default function Portfolio() {
 
         {/* Profile Image (Moves below text on small screens) */}
         <img 
-          src={Profile}
-          alt="Jyothi Suresh" 
-          className="w-70 h-80 border-4  border-blue-400 shadow-lg mt-10  sm:mb-4 transition duration-300 hover:scale-105 order-last sm:order-none"
-        />
+  src={Profile}
+  alt="Jyothi Suresh"
+  className="w-48 h-72 sm:w-48 sm:h-56 md:w-64 md:h-72 lg:w-72 lg:h-80 border-4 border-blue-400 shadow-lg mt-10 sm:mb-4 transition duration-300 hover:scale-105 order-last sm:order-none"
+/>
+
       </section>
 
       {/* Classic Design Element */}
-      <section className=" flex justify-center">
+      <section className="flex justify-center">
         <div className="w-1/3 h-1 bg-blue-400 rounded-full"></div>
       </section>
 
@@ -70,23 +71,45 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-
       <section className="py-16 px-4 bg-gray-900">
         <h2 className="text-3xl font-semibold text-center text-blue-400 transition duration-300 hover:scale-105 hover:text-blue-300">
           Projects
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mt-6">
+        <div className="flex overflow-x-auto gap-6 mt-6 max-w-full py-6">
           {/* Project Card */}
-          <div className="bg-gray-800 p-5 rounded-lg shadow-lg border border-blue-500 transition duration-300 hover:scale-105 hover:shadow-xl">
-            <h3 className="text-xl font-semibold text-white transition duration-300 hover:text-blue-400">Project Name</h3>
-            <p className="text-gray-400 mt-2 transition duration-300 hover:text-gray-200">A short description of the project.</p>
-            <a
-              href="#"
-              className="inline-block mt-4 text-blue-400 hover:text-blue-300 hover:underline transition duration-300"
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="bg-gray-800 p-5 rounded-lg shadow-lg border border-blue-500 transition duration-300 transform hover:scale-105 hover:shadow-xl"
             >
-              View Project
-            </a>
-          </div>
+              {/* Project Image (Thumbnail) */}
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-40 object-cover rounded-md mb-4"
+              />
+
+              {/* Project Title */}
+              <h3 className="text-xl font-semibold text-white transition duration-300 hover:text-blue-400">
+                {project.title}
+              </h3>
+
+              {/* Project Description */}
+              <p className="text-gray-400 mt-2 transition duration-300 hover:text-gray-200">
+                {project.description}
+              </p>
+
+              {/* GitHub Link */}
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 text-blue-400 hover:text-blue-300 hover:underline transition duration-300"
+              >
+                View Project
+              </a>
+            </div>
+          ))}
         </div>
       </section>
 

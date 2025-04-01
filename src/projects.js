@@ -11,7 +11,7 @@ export const projects = [
     title: "LearnUm",
     description: "An online learning platform built with React and Tailwind CSS.",
     image: "/src/assets/projectThum/LearnUm.png",
-    github: "https://github.com/Jyothi-Suresh17/LearnUm"
+    github: "https://github.com/Jyothi-Suresh17/LearnumFrontend"
   },
   {
     id: 3,
@@ -25,6 +25,6 @@ export const projects = [
     title: "Employee Task Manager",
     description: "A task manager for employees, built with React and Node.js.",
     image: "/src/assets/projectThum/employeeManager.png",
-    github: "https://github.com/Jyothi-Suresh17/EmployeeTaskManager"
+    github: "https://github.com/Jyothi-Suresh17/EmployeeManeger"
   }
 ];
