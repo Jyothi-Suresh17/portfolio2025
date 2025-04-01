@@ -33,8 +33,9 @@ export default function Portfolio() {
         <img 
   src={Profile}
   alt="Jyothi Suresh"
-  className="w-[200px] h-[300px] sm:w-[190px] sm:h-[240px] md:w-[256px] md:h-[320px] lg:w-[288px] lg:h-[360px] border-4 border-blue-400 shadow-lg mt-10 sm:mb-4 transition duration-300 hover:scale-105 order-last sm:order-none"
+  className="w-[200px] h-[350px] sm:w-[190px] sm:h-[280px] md:w-[256px] md:h-[380px] lg:w-[288px] lg:h-[420px] border-4 border-blue-400 shadow-lg mt-10 sm:mb-4 transition duration-300 hover:scale-105 order-last sm:order-none"
 />
+
 
 
       </section>
