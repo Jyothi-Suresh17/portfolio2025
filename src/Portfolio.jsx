@@ -21,7 +21,7 @@ export default function Portfolio() {
         </p>
 
         <a
-          href="/public/Resume_Jyothi_Suresh copy.pdf"
+           href="/Resume_Jyothi_Suresh copy.pdf"
           className="mt-5 bg-blue-500 px-6 py-3 rounded-full hover:bg-blue-600 transition shadow-md hover:scale-105"
           download="Jyothi_Suresh_CV.pdf"
           target="_blank"
