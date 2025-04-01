@@ -1,0 +1,30 @@
+export const projects = [
+  {
+    id: 1,
+    title: "BuzzChat",
+    description: "A real-time chat application built using React and Socket.io.",
+    image: "/src/assets/projectThum/BuzzChat.png",
+    github: "https://github.com/Jyothi-Suresh17/BuzzChat"
+  },
+  {
+    id: 2,
+    title: "LearnUm",
+    description: "An online learning platform built with React and Tailwind CSS.",
+    image: "/src/assets/projectThum/LearnUm.png",
+    github: "https://github.com/Jyothi-Suresh17/LearnUm"
+  },
+  {
+    id: 3,
+    title: "FlickPicks",
+    description: "A movie recommendation app powered by the TMDB API and React.",
+    image: "/src/assets/projectThum/FlickPicks.png",  
+    github: "https://github.com/Jyothi-Suresh17/FlickPicks"
+  },
+  {
+    id: 4,
+    title: "Employee Task Manager",
+    description: "A task manager for employees, built with React and Node.js.",
+    image: "/src/assets/projectThum/employeeManager.png",
+    github: "https://github.com/Jyothi-Suresh17/EmployeeTaskManager"
+  }
+];

@@ -1,32 +1,44 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Profile from "./assets/Profile.jpg";
+import { projects } from "./projects";
 
 export default function Portfolio() {
-
-  const skills = ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "MongoDB", "Node.js", "Express.js"];
+  const skills = [
+    "HTML", "CSS", "JavaScript", "React", "Tailwind CSS",
+    "MongoDB", "Node.js", "Express.js"
+  ];
 
   return (
     <div className="min-h-screen bg-black text-gray-200">
       {/* Hero Section */}
       <section className="h-screen flex flex-col items-center justify-center text-center p-4">
+        {/* Text Content */}
         <h1 className="text-5xl font-bold text-blue-400 transition duration-300 hover:scale-105 hover:text-blue-300">
           Jyothi Suresh
         </h1>
         <p className="text-xl text-gray-400 mt-3 transition duration-300 hover:text-gray-200">
           Frontend Developer | React Enthusiast
         </p>
-        <a
-  href="/your-cv.pdf"
-  className="mt-5 bg-blue-500 px-6 py-3 rounded-full hover:bg-blue-600 transition shadow-md hover:scale-105"
-  download="Jyothi_Suresh_CV.pdf"
->
-  Download CV
-</a>
 
+        <a
+          href="/your-cv.pdf"
+          className="mt-5 bg-blue-500 px-6 py-3 rounded-full hover:bg-blue-600 transition shadow-md hover:scale-105"
+          download="Jyothi_Suresh_CV.pdf"
+        >
+          Download CV
+        </a>
+
+        {/* Profile Image (Moves below text on small screens) */}
+        <img 
+          src={Profile}
+          alt="Jyothi Suresh" 
+          className="w-70 h-80 border-4  border-blue-400 shadow-lg mt-10  sm:mb-4 transition duration-300 hover:scale-105 order-last sm:order-none"
+        />
       </section>
 
       {/* Classic Design Element */}
-      <section className="py-8 flex justify-center">
+      <section className=" flex justify-center">
         <div className="w-1/3 h-1 bg-blue-400 rounded-full"></div>
       </section>
 
@@ -58,6 +70,7 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
+
       <section className="py-16 px-4 bg-gray-900">
         <h2 className="text-3xl font-semibold text-center text-blue-400 transition duration-300 hover:scale-105 hover:text-blue-300">
           Projects
@@ -86,7 +99,7 @@ export default function Portfolio() {
           <a href="https://github.com/Jyothi-Suresh17" className="text-gray-400 text-2xl hover:text-blue-400 transition duration-300 hover:scale-110">
             <FaGithub />
           </a>
-          <a href="www.linkedin.com/in/jy0thi-suresh" className="text-gray-400 text-2xl hover:text-blue-400 transition duration-300 hover:scale-110">
+          <a href="https://www.linkedin.com/in/jy0thi-suresh" className="text-gray-400 text-2xl hover:text-blue-400 transition duration-300 hover:scale-110">
             <FaLinkedin />
           </a>
           <a href="mailto:jyothisuresh2521@gmail.com?subject=Hello&body=I want to contact you" className="text-gray-400 text-2xl hover:text-blue-400 transition duration-300 hover:scale-110">
